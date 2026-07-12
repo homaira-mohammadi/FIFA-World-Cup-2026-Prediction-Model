@@ -1,13 +1,10 @@
-# FIFA-WorldCup-2026-Prediction-Model
-
-
-`markdown
-# FIFA World Cup 2026 Match Outcome Predictor 🏆
+# FIFA-WorldCup-2026-Prediction-Model 🏆
 
 A machine learning project that predicts **Win / Draw / Loss** outcomes for FIFA World Cup matches. The models were trained on 96 years of FIFA World Cup history (1930–2022) and evaluated using the ongoing 2026 FIFA World Cup.
 
 This project demonstrates an end-to-end machine learning pipeline, including data collection, preprocessing, feature engineering, model comparison, evaluation, and tournament simulation.
 
+---
 
 ## Project Overview
 
@@ -19,6 +16,8 @@ The main objectives were:
 - Compare multiple classification algorithms
 - Predict match outcomes (Win / Draw / Loss)
 - Simulate the remaining tournament to estimate each team's probability of winning the World Cup
+
+---
 
 ## Features
 
@@ -40,6 +39,7 @@ The main objectives were:
 - Used chronological train/test splitting suitable for time-series sports data
 - Extended the model into a tournament bracket simulation to estimate each team's probability of winning the tournament
 
+---
 
 ## Results (as of the 2026 Semifinals)
 
@@ -78,6 +78,7 @@ The project trained and compared four supervised learning models:
 | Logistic Regression | Linear baseline model using standardized features |
 | XGBoost | Gradient-boosted tree model with strong performance on tabular data |
 
+---
 
 ## Dataset Sources
 
@@ -93,38 +94,11 @@ Data used includes:
 
 Since no single dataset contained all required features, multiple CSV files were collected, cleaned, merged, and validated before being used for machine learning.
 
-### 2. Install dependencies
+---
+
+## Running the Project
+
+### 1. Clone the repository
 
 ```bash
-pip install pandas numpy matplotlib scikit-learn xgboost
-
-**### Known Limitations**
-
-- The dataset contains approximately **1,000 FIFA World Cup matches**, which is relatively small for machine learning.
-- Predicting draws remains challenging because pre-match statistics cannot capture all match-specific events, tactics, injuries, or randomness.
-- Data was collected from multiple public sources rather than a single standardized dataset, requiring additional cleaning and validation.
-- Some datasets had different formats and naming conventions, which required preprocessing before integration.
-- The `home_team` and `away_team` labels represent data-entry order rather than true home advantage, except for host nations.
-- EA Sports FC squad ratings were not used as training features because equivalent historical data is unavailable for older tournaments.
-
-**
-## Future Improvements**
-
-- Hyperparameter tuning using Grid Search or Randomized Search
-- Dixon-Coles Poisson model for score prediction
-- Add player-level and squad-quality features
-- Build a deployable web application or prediction API
-- Expand the dataset with qualifiers and international competitions
-**
-## Contributors**
-
-This project was developed collaboratively by:
-
-- **Homaira Mohammadi**
-- **Wolanga Jalalzai**
-
-**## Disclaimer**
-
-This project was built for educational and research purposes.
-
-The predictions are machine learning estimates and should not be considered guarantees or used as betting advice.
+git clone <repository-url>
