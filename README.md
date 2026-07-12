@@ -1,14 +1,13 @@
 # FIFA-WorldCup-2026-Prediction-Model
 
 
-````markdown
+`markdown
 # FIFA World Cup 2026 Match Outcome Predictor 🏆
 
 A machine learning project that predicts **Win / Draw / Loss** outcomes for FIFA World Cup matches. The models were trained on 96 years of FIFA World Cup history (1930–2022) and evaluated using the ongoing 2026 FIFA World Cup.
 
 This project demonstrates an end-to-end machine learning pipeline, including data collection, preprocessing, feature engineering, model comparison, evaluation, and tournament simulation.
 
----
 
 ## Project Overview
 
@@ -20,8 +19,6 @@ The main objectives were:
 - Compare multiple classification algorithms
 - Predict match outcomes (Win / Draw / Loss)
 - Simulate the remaining tournament to estimate each team's probability of winning the World Cup
-
----
 
 ## Features
 
@@ -43,7 +40,6 @@ The main objectives were:
 - Used chronological train/test splitting suitable for time-series sports data
 - Extended the model into a tournament bracket simulation to estimate each team's probability of winning the tournament
 
----
 
 ## Results (as of the 2026 Semifinals)
 
@@ -82,23 +78,6 @@ The project trained and compared four supervised learning models:
 | Logistic Regression | Linear baseline model using standardized features |
 | XGBoost | Gradient-boosted tree model with strong performance on tabular data |
 
----
-
-## Project Structure
-
-```
-02_worldcup_2026_final_model.ipynb   # Main notebook
-
-data/
-├── raw/
-│   ├── historical/                  # FIFA World Cup matches (1930–2022)
-│   ├── 2026_data/
-│   │   ├── fifa_overall/            # 2026 tournament data
-│   │   └── updated/                 # Additional 2026 results for validation
-│   └── enrichment/                  # FIFA rankings and player rating data
-```
-
----
 
 ## Dataset Sources
 
@@ -114,33 +93,10 @@ Data used includes:
 
 Since no single dataset contained all required features, multiple CSV files were collected, cleaned, merged, and validated before being used for machine learning.
 
----
-
-## Running the Project
-
-### 1. Clone the repository
-
-```bash
-git clone <repository-url>
-```
-
 ### 2. Install dependencies
 
 ```bash
 pip install pandas numpy matplotlib scikit-learn xgboost
-```
-
-### 3. Run the notebook
-
-Open:
-
-```
-02_worldcup_2026_final_model.ipynb
-```
-
-and run all cells.
-
----
 
 ## Known Limitations
 
@@ -151,7 +107,6 @@ and run all cells.
 - The `home_team` and `away_team` labels represent data-entry order rather than true home advantage, except for host nations.
 - EA Sports FC squad ratings were not used as training features because equivalent historical data is unavailable for older tournaments.
 
----
 
 ## Future Improvements
 
@@ -161,8 +116,6 @@ and run all cells.
 - Build a deployable web application or prediction API
 - Expand the dataset with qualifiers and international competitions
 
----
-
 ## Contributors
 
 This project was developed collaboratively by:
@@ -170,11 +123,8 @@ This project was developed collaboratively by:
 - **Homaira Mohammadi**
 - **Wolanga Jalalzai**
 
----
-
 ## Disclaimer
 
 This project was built for educational and research purposes.
 
 The predictions are machine learning estimates and should not be considered guarantees or used as betting advice.
-````
