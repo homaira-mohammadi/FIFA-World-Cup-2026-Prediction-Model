@@ -98,7 +98,7 @@ Since no single dataset contained all required features, multiple CSV files were
 ```bash
 pip install pandas numpy matplotlib scikit-learn xgboost
 
-## Known Limitations
+**### Known Limitations**
 
 - The dataset contains approximately **1,000 FIFA World Cup matches**, which is relatively small for machine learning.
 - Predicting draws remains challenging because pre-match statistics cannot capture all match-specific events, tactics, injuries, or randomness.
@@ -107,23 +107,23 @@ pip install pandas numpy matplotlib scikit-learn xgboost
 - The `home_team` and `away_team` labels represent data-entry order rather than true home advantage, except for host nations.
 - EA Sports FC squad ratings were not used as training features because equivalent historical data is unavailable for older tournaments.
 
-
-## Future Improvements
+**
+## Future Improvements**
 
 - Hyperparameter tuning using Grid Search or Randomized Search
 - Dixon-Coles Poisson model for score prediction
 - Add player-level and squad-quality features
 - Build a deployable web application or prediction API
 - Expand the dataset with qualifiers and international competitions
-
-## Contributors
+**
+## Contributors**
 
 This project was developed collaboratively by:
 
 - **Homaira Mohammadi**
 - **Wolanga Jalalzai**
 
-## Disclaimer
+**## Disclaimer**
 
 This project was built for educational and research purposes.
 
